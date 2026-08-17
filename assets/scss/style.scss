@@ -1,0 +1,15 @@
+$cor-texto : rgb(209, 84, 105);
+$cor-fundo : rgb(87, 37, 45);
+$cor-h1 : rgb(89, 37, 148);
+
+body{
+    color: $cor-texto;
+
+    h1{
+        color: $cor-h1;
+
+        &:hover{
+            background-color: $cor-fundo;
+        }
+    }
+}
