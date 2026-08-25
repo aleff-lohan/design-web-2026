@@ -2,74 +2,140 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{seu nome aqui} - UX e Dev Front-end</title>
-    <!-- CSS compilado do SCSS | colocar o link correto, pois este vai dar erro, viu-->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Usando a fonte de icones aqui-->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prática Tailwind - Dia 2 [Atividade 2]</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-100">
 
-    <header role="banner">
-        <nav role="navigation" aria-label="Navegação principal">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section class="max-w-7xl mx-auto px-4 py-10">
 
-    <main role="main">
-        <section id="sobre" aria-labelledby="titulo-card">
-            <div class="card">
+    <h1 class="text-3xl font-bold text-green-800 mb-8">
+      Notícias
+    </h1>
 
-                <!-- Avatar (placeholder) -->
-                <div class="card__avatar">
-                    <img src="https://via.placeholder.com/120x120/2c3e50/ffffff?text=Bruno"
-                        alt="Avatar de Bruno Nakamura, UX e Dev Front-end">
-                </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <!-- Informações -->
-                <div class="card__content">
-                    <h1 id="titulo-card">Bruno Nakamura</h1>
-                    <p class="card__subtitle">UX e Dev Front-end</p>
+      <article
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
 
-                    <p class="card__description">
-                        Sou um híbrido raro: Design Systems + Engenharia de Produto.
-                        Entrego de ponta a ponta – da descoberta à produção – com métricas
-                        de negócio na cabeceira e DX/UX no detalhe.<br>
-                        Tradução simultânea entre PMs, Design, Front, Back e Data.
-                        Sem teatrinho: shippo, meço, repito.
-                    </p>
+        <img src="https://i.pinimg.com/1200x/15/ca/57/15ca57e69eb155e3dfafa957b3c04095.jpg" alt="Troféu de premiação"
+          class="w-full h-48 object-cover" />
 
-                    <!-- Botão com ícone -->
-                    <a href="#" class="card__button" aria-label="Vamos trabalhar juntos">
-                        Vamos trabalhar juntos <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                    </a>
-                </div>
+        <div class="p-5 flex flex-col flex-1 space-y-2">
 
-                <!-- Tecnologias (mockup de ícones) -->
-                <div class="card__tech" id="tecnologias">
-                    <h2 class="card__tech-title">Tecnologias que domino</h2>
-                    <ul class="card__tech-list">
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> ClickUp</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Dropbox</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> PAYCHEX</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> elastic</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> stripe</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
+          <span class="inline-block w-fit text-xs font-semibold px-3 py-1 rounded-full bg-green-100 text-green-800">
+            Prêmio IEL 2026
+          </span>
 
-    <footer role="contentinfo">
-        <p>&copy; 2026 Bruno Nakamura - Exemplo didático para alunos de webdesign</p>
-    </footer>
+          <h2 class="text-xl font-bold text-green-800">
+            IFRN tem projetos entre os vencedores do Prêmio IEL 2026
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Instituto conquistou o 1º lugar em Educação Inovadora - Nível Técnico
+            e o 2º lugar em Educação Inovadora - Nível Superior.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 20 horas, 40 minutos
+          </p>
+
+        </div>
+      </article>
+
+
+      <article
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+
+        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80"
+          alt="Pesquisa científica" class="w-full h-48 object-cover" />
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <span class="inline-block w-fit text-xs font-semibold px-3 py-1 rounded-full bg-blue-100 text-blue-800">
+            Pesquisa
+          </span>
+
+          <h2 class="text-xl font-bold text-green-800">
+            IFRN desenvolve novas pesquisas para inovação tecnológica
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Projetos desenvolvidos por estudantes e pesquisadores do instituto
+            buscam novas soluções para desafios da sociedade.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 1 dia
+          </p>
+
+        </div>
+      </article>
+
+
+      <article
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+          alt="Estudantes em intercâmbio" class="w-full h-48 object-cover" />
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <span class="inline-block w-fit text-xs font-semibold px-3 py-1 rounded-full bg-yellow-100 text-yellow-800">
+            Internacionalização
+          </span>
+
+          <h2 class="text-xl font-bold text-green-800">
+            Estudantes do IFRN participam de programa de intercâmbio
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Programa oferece aos alunos a oportunidade de vivenciar novas
+            culturas e ampliar sua experiência acadêmica internacional.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 2 dias
+          </p>
+
+        </div>
+      </article>
+
+      <article
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+
+        <img src="https://i.pinimg.com/736x/34/a0/87/34a0877c1d52908a53a9c11ff31515d4.jpg"
+          alt="Estudantes em atividade acadêmica" class="w-full h-48 object-cover" />
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <span class="inline-block w-fit text-xs font-semibold px-3 py-1 rounded-full bg-purple-100 text-purple-800">
+            Educação
+          </span>
+
+          <h2 class="text-xl font-bold text-green-800">
+            IFRN amplia oportunidades de formação para estudantes
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Novas iniciativas fortalecem a formação acadêmica e profissional
+            dos estudantes em diferentes áreas do conhecimento.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 3 dias
+          </p>
+
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
 </body>
 
 </html>
