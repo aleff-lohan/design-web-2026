@@ -4,72 +4,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{seu nome aqui} - UX e Dev Front-end</title>
-    <!-- CSS compilado do SCSS | colocar o link correto, pois este vai dar erro, viu-->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Usando a fonte de icones aqui-->
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Footer IFRN</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/phosphor-icons@latest/src/css/phosphor.css">
 </head>
 
 <body>
 
-    <header role="banner">
-        <nav role="navigation" aria-label="Navegação principal">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+<footer class="text-[8px] text-gray-600">
 
-    <main role="main">
-        <section id="sobre" aria-labelledby="titulo-card">
-            <div class="card">
+    <!-- VOLTAR AO TOPO -->
+    <div class="max-w-[620px] mx-auto border-t border-gray-200 pt-1 text-center">
+        <button class="text-[7px] text-green-700">
+            ↑ Voltar ao topo
+        </button>
+    </div>
 
-                <!-- Avatar (placeholder) -->
-                <div class="card__avatar">
-                    <img src="https://via.placeholder.com/120x120/2c3e50/ffffff?text=Bruno"
-                        alt="Avatar de Bruno Nakamura, UX e Dev Front-end">
-                </div>
 
-                <!-- Informações -->
-                <div class="card__content">
-                    <h1 id="titulo-card">Bruno Nakamura</h1>
-                    <p class="card__subtitle">UX e Dev Front-end</p>
+    <!-- MAPA DO SITE -->
+    <div class="max-w-[620px] mx-auto py-10">
 
-                    <p class="card__description">
-                        Sou um híbrido raro: Design Systems + Engenharia de Produto.
-                        Entrego de ponta a ponta – da descoberta à produção – com métricas
-                        de negócio na cabeceira e DX/UX no detalhe.<br>
-                        Tradução simultânea entre PMs, Design, Front, Back e Data.
-                        Sem teatrinho: shippo, meço, repito.
-                    </p>
+        <div class="grid grid-cols-4 gap-8">
 
-                    <!-- Botão com ícone -->
-                    <a href="#" class="card__button" aria-label="Vamos trabalhar juntos">
-                        Vamos trabalhar juntos <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                    </a>
-                </div>
+            <!-- PROCESSOS -->
+            <div>
+                <h2 class="font-semibold text-gray-800 mb-2">
+                    Processos seletivos
+                </h2>
 
-                <!-- Tecnologias (mockup de ícones) -->
-                <div class="card__tech" id="tecnologias">
-                    <h2 class="card__tech-title">Tecnologias que domino</h2>
-                    <ul class="card__tech-list">
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> ClickUp</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Dropbox</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> PAYCHEX</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> elastic</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> stripe</li>
-                    </ul>
-                </div>
+                <ul class="space-y-[4px]">
+                    <li>Bolsas para estudantes</li>
+                    <li>Empreenda no IFRN</li>
+                    <li>Estude no IFRN</li>
+                    <li>Gestão IFRN</li>
+                    <li>Internacionalização</li>
+                    <li>Monitoria e Tutoria</li>
+                    <li>Pesquise no IFRN</li>
+                    <li>Servidores</li>
+                    <li>Trabalhe no IFRN</li>
+                </ul>
+
+                <h2 class="font-semibold text-gray-800 mt-5 mb-2">
+                    Cursos
+                </h2>
+
+                <ul class="space-y-[4px]">
+                    <li>Cursos de Pós-Graduação</li>
+                    <li>Cursos Superiores</li>
+                    <li>Cursos Técnicos</li>
+                    <li>Outros Cursos</li>
+                </ul>
             </div>
-        </section>
-    </main>
 
-    <footer role="contentinfo">
-        <p>&copy; 2026 Bruno Nakamura - Exemplo didático para alunos de webdesign</p>
-    </footer>
+
+            <!-- CAMPI -->
+            <div>
+                <h2 class="font-semibold text-gray-800 mb-2">
+                    Campi
+                </h2>
+
+                <ul class="space-y-[4px]">
+                    <li>Apodi</li>
+                    <li>Caicó</li>
+                    <li>Canguaretama</li>
+                    <li>Ceará-Mirim</li>
+                    <li>Currais Novos</li>
+                    <li>Ipanguaçu</li>
+                    <li>João Câmara</li>
+                    <li>Jucurutu</li>
+                    <li>Lajes</li>
+                    <li>Macau</li>
+                    <li>Mossoró</li>
+                    <li>Natal-Central</li>
+                    <li>Natal-Centro Histórico</li>
+                    <li>Natal-Zona Leste</li>
+                    <li>Natal-Zona Norte</li>
+                    <li>Nova Cruz</li>
+                    <li>Parelhas</li>
+                    <li>Parnamirim</li>
+                    <li>Pau dos Ferros</li>
+                    <li>Santa Cruz</li>
+                    <li>São Gonçalo do Amarante</li>
+                    <li>São Miguel</li>
+                    <li>São Paulo do Potengi</li>
+                    <li>Touros</li>
+                    <li>Umarizal</li>
+                    <li>Reitoria</li>
+                </ul>
+            </div>
+
+
+            <!-- INSTITUCIONAL -->
+            <div>
+                <h2 class="font-semibold text-gray-800 mb-2">
+                    Institucional
+                </h2>
+
+                <ul class="space-y-[4px]">
+                    <li>Apresentação</li>
+                    <li>Administração</li>
+                    <li>Comissões permanentes</li>
+                    <li>Comunicação Institucional</li>
+                    <li>Ensino</li>
+                    <li>Estudantes</li>
+                    <li>Extensão</li>
+                    <li>Gabinete</li>
+                    <li>Gestão Estratégica</li>
+                    <li>Governança</li>
+                    <li>Pesquisa, Pós-graduação e Inovação</li>
+                    <li>Servidores</li>
+                    <li>Tecnologia da Informação</li>
+                    <li>Internacionalização</li>
+                    <li>Infraestrutura</li>
+                    <li>Polo de Inovação Currais Novos</li>
+                </ul>
+            </div>
+
+
+            <!-- ACESSO -->
+            <div>
+                <h2 class="font-semibold text-gray-800 mb-2">
+                    Acesso à Informação
+                </h2>
+
+                <ul class="space-y-[4px]">
+                    <li>Institucional</li>
+                    <li>Ações e Programas</li>
+                    <li>Participação social</li>
+                    <li>Auditorias</li>
+                    <li>Convênios e Transferências</li>
+                    <li>Receitas e Despesas</li>
+                    <li>Licitações e Contratos</li>
+                    <li>Servidores</li>
+                    <li>Informações classificadas</li>
+                    <li>Serviço de Informação ao Cidadão</li>
+                    <li>Perguntas Frequentes</li>
+                    <li>Dados Abertos</li>
+                    <li>Sanções administrativas</li>
+                    <li>Ferramentas e aspectos tecnológicos</li>
+                    <li>Boletins de Serviços</li>
+                    <li>Proteção de dados pessoais</li>
+                    <li>Documentos Institucionais</li>
+                    <li>Transparência e Prestação de Contas</li>
+                </ul>
+
+                <h2 class="font-semibold text-gray-800 mt-7">Eventos</h2>
+                <h2 class="font-semibold text-gray-800 mt-7">Serviços</h2>
+                <h2 class="font-semibold text-gray-800 mt-7">Acessibilidade</h2>
+                <h2 class="font-semibold text-gray-800 mt-7">Créditos</h2>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- BANNERS -->
+    <div class="border-t border-gray-200">
+
+        <div class="max-w-[620px] mx-auto py-8">
+
+            <div class="flex justify-center items-center gap-8">
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/icon_memoria_ifrn.original.png"
+                         class="w-7">
+                    <span>Memoria</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/Banner_-_Sistema_de_Bibliotecas.original.png"
+                         class="w-7">
+                    <span>Sistema de Bibliotecas do IFRN</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/licitaC3A7C3B5es.original.png"
+                         class="w-6">
+                    <span>Licitações</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/ouvidoria.original.png"
+                         class="w-7">
+                    <span>Ouvidoria</span>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center items-center gap-8 mt-6">
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/processos_eletronicos.original.png"
+                         class="w-8">
+                    <span>Processos eletrônicos</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/sic.original.png"
+                         class="w-7">
+                    <span>Serviço de Informação ao Cidadão</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/transparencia_e_prestaC3A7C3A3o.original.png"
+                         class="w-7">
+                    <span>Transparência e prestação de contas</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/FalaBR.original.png"
+                         class="w-7">
+                    <span>Fala.BR</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- INFORMAÇÕES -->
+    <div class="border-t border-gray-200">
+
+        <div class="max-w-[620px] mx-auto py-7">
+
+            <div class="flex justify-between items-center">
+
+                <div class="flex gap-4 items-center">
+
+                    <img src="/assets/img/ifrnlogo.png"
+                         class="w-14">
+
+                    <div>
+
+                        <h2 class="font-semibold text-gray-800">
+                            Instituto Federal de Educação, Ciência e Tecnologia
+                            do Estado do Rio Grande do Norte
+                        </h2>
+
+                        <p>Rua Dr. Nilo Bezerra Ramalho, 1692, Tirol</p>
+                        <p>CEP: 59015-300</p>
+                        <p>E-mail: comunicacao@ifrn.edu.br</p>
+                        <p>Telefone: (84) 4005-0890</p>
+
+                        <div class="flex gap-3 mt-3 text-sm">
+                            <i class="ph ph-instagram-logo"></i>
+                            <i class="ph ph-twitter-logo"></i>
+                            <i class="ph ph-linkedin-logo"></i>
+                            <i class="ph ph-youtube-logo"></i>
+                            <i class="ph ph-spotify-logo"></i>
+                            <i class="ph ph-tiktok-logo"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- E-MEC -->
+                <div class="border border-gray-400 rounded p-2 flex gap-2">
+
+                    <div>
+                        <p class="text-green-700 font-semibold">
+                            e-MEC
+                        </p>
+
+                        <p class="text-[7px] w-24">
+                            Consulte o cadastro da instituição
+                            no Sistema do e-MEC
+                        </p>
+                    </div>
+
+                    <img src="/assets/img/qrcode.jpg"
+                         class="w-16 h-16">
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- COPYRIGHT -->
+    <div class="bg-[#062719] text-white py-3">
+
+        <p class="text-center text-[7px]">
+            Copyright © 2026 | Instituto Federal de Educação,
+            Ciência e Tecnologia do Estado do Rio Grande do Norte
+        </p>
+
+    </div>
+
+</footer>
+
 </body>
-
 </html>
