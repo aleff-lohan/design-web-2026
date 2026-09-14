@@ -13,7 +13,7 @@
         href="https://unpkg.com/phosphor-icons@latest/src/css/phosphor.css">
 </head>
 
-<body>
+<body class="bg-gray-50">
 
 
     <header class="bg-green-800 text-white">
@@ -169,13 +169,14 @@
     </header>
 
     
+    <!-- SEÇÃO NOTÍCIAS -->
     <section class="max-w-7xl mx-auto px-4 py-10">
 
         <h1 class="text-3xl font-bold text-green-800 mb-8">
           Notícias
         </h1>
     
-        <div class="http://127.0.0.1:3000/index.html?vscode-livepreview=true">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
     
           <article
             class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
@@ -185,15 +186,15 @@
     
             <div class="p-5 flex flex-col flex-1 space-y-2">
     
-              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full w-max">
                 Prêmio IEL 2026
               </span>
     
-              <h2 class="text-xl font-bold text-green-800 mt-2.">
+              <h2 class="text-xl font-bold text-green-800 mt-2">
                 IFRN tem projetos entre os vencedores do Prêmio IEL 2026
               </h2>
     
-              <p class=" text-gray-700 text-sm">
+              <p class="text-gray-700 text-sm">
                 Instituto conquistou o 1º lugar em Educação Inovadora - Nível Técnico
                 e o 2º lugar em Educação Inovadora - Nível Superior.
               </p>
@@ -214,11 +215,11 @@
     
             <div class="p-5 flex flex-col flex-1 space-y-2">
     
-              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full w-max">
                 Pesquisa
               </span>
     
-              <h2 class="text-xl font-bold text-green-800 mt-2.">
+              <h2 class="text-xl font-bold text-green-800 mt-2">
                 IFRN desenvolve novas pesquisas para inovação tecnológica
               </h2>
     
@@ -243,11 +244,11 @@
     
             <div class="p-5 flex flex-col flex-1 space-y-2">
     
-              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full w-max">
                 Internacionalização
               </span>
     
-              <h2 class="text-xl font-bold text-green-800 mt-2.">
+              <h2 class="text-xl font-bold text-green-800 mt-2">
                 Estudantes do IFRN participam de programa de intercâmbio
               </h2>
     
@@ -271,7 +272,7 @@
     
             <div class="p-5 flex flex-col flex-1 space-y-2">
     
-              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full w-max">
                 Educação
               </span>
     
@@ -296,70 +297,215 @@
       </section>
 
 
+      <!-- SEÇÃO EVENTOS (ATUALIZADA DE ACORDO COM A IMAGEM) -->
       <section class="max-w-7xl mx-auto px-4 py-10">
 
-        <h1 class="text-3xl font-bold text-green-800 mb-8">
-          Eventos
-        </h1>
-    
-        <div class="http://127.0.0.1:3000/index.html?vscode-livepreview=true">
-    
-          <article
-            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-    
-            <img src="https://www.feiradesantana.ba.gov.br/imagens/noticias/16022025225254.jpg" alt="Troféu de premiação"
-              class="w-full h-48 object-cover" />
-    
-            <div class="p-5 flex flex-col flex-1 space-y-2">
-    
-              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
-                Lúdico
-              </span>
-    
-              <h2 class="text-xl font-bold text-green-800 mt-2.">
-                Estudantes do IFRN participam da Secite
-              </h2>
-    
-              <p class=" text-gray-700 text-sm">
-                IFRN promove programação especial com atividades voltadas à integração, ao conhecimento e à participação da comunidade acadêmica.
-              </p>
-    
-              <p class="text-gray-500 text-xs mt-2">
-                Há 20 horas, 40 minutos
-              </p>
-    
+        <!-- Header da seção -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
+          <div>
+            <h1 class="text-3xl font-bold text-[#064e3b] mb-2">
+              Eventos
+            </h1>
+            <p class="text-gray-600 text-sm max-w-xl">
+              Conheça todos os eventos - atividades, festivais, congressos, palestras e outros - que englobam os campi do IFRN em diferentes escalas de alcance social.
+            </p>
+          </div>
+          <a href="#" class="inline-flex items-center border border-[#064e3b] text-[#064e3b] px-4 py-1.5 rounded-full text-xs font-medium hover:bg-green-50 self-start md:self-auto transition">
+            Todos os eventos
+            <i class="ph ph-caret-right ml-1"></i>
+          </a>
+        </div>
+
+        <!-- Grid de Cards de Eventos -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Card 1 -->
+          <div class="bg-white border border-emerald-100 rounded-2xl p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between text-[11px] text-gray-600 mb-4">
+                <span class="flex items-center gap-1">
+                  <span class="text-emerald-700 font-bold">Δ</span> Em breve
+                </span>
+                <span class="border border-gray-300 rounded-full px-2 py-0.5 flex items-center gap-1 text-gray-500 text-[10px]">
+                  <i class="ph ph-[#064e3b] ph-buildings"></i> Pau dos Ferros
+                </span>
+              </div>
+              <h3 class="font-bold text-gray-800 text-sm leading-snug mb-6 min-h-[40px]">
+                Vivências em Arte
+              </h3>
             </div>
-          </article>
-    
-    
-          <article
-            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-    
-            <img src="https://diocesedesaojoaodelrei.com.br/wp-content/uploads/2025/02/foto-de-foco-seletivo-de-uma-pessoa-segurando-um-livro_181624-30215-1024x681.jpg"
-              alt="Pesquisa científica" class="w-full h-48 object-cover" />
-    
-            <div class="p-5 flex flex-col flex-1 space-y-2">
-    
-              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
-                Integração
-              </span>
-    
-              <h2 class="text-xl font-bold text-green-800 mt-2.">
-                Conheça a SEMENTE - Semana do Meio Ambiente
-              </h2>
-    
-              <p class="text-gray-700 text-sm">
-                Programação especial reúne estudantes e servidores do IFRN em uma série de atividades dedicadas ao aprendizado e à troca de experiências.
-              </p>
-    
-              <p class="text-gray-500 text-xs mt-2">
-                Há 1 dia
-              </p>
-    
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-[#059669]">07</span>
+              <div class="text-[11px] font-bold text-[#059669] leading-tight">
+                DEZ<br>2026
+              </div>
             </div>
-          </article>
-    
-    
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white border border-emerald-100 rounded-2xl p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between text-[11px] text-gray-600 mb-4">
+                <span class="flex items-center gap-1">
+                  <span class="text-emerald-700 font-bold">Δ</span> Em breve
+                </span>
+                <span class="border border-gray-300 rounded-full px-2 py-0.5 flex items-center gap-1 text-gray-500 text-[10px]">
+                  <i class="ph ph-buildings"></i> Caicó
+                </span>
+              </div>
+              <h3 class="font-bold text-gray-800 text-sm leading-snug mb-6 min-h-[40px]">
+                III Feira Seridó Ciência
+              </h3>
+            </div>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-[#059669]">25</span>
+              <div class="text-[11px] font-bold text-[#059669] leading-tight">
+                NOV<br>2026
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white border border-emerald-100 rounded-2xl p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between text-[11px] text-gray-600 mb-4">
+                <span class="flex items-center gap-1">
+                  <span class="text-emerald-700 font-bold">Δ</span> Em breve
+                </span>
+                <span class="border border-gray-300 rounded-full px-2 py-0.5 flex items-center gap-1 text-gray-500 text-[10px]">
+                  <i class="ph ph-buildings"></i> João Câmara
+                </span>
+              </div>
+              <h3 class="font-bold text-gray-800 text-sm leading-snug mb-6 min-h-[40px]">
+                CPOP 2026 - Competição de Pontes de Palito de Picolé do IFRN João Câmara
+              </h3>
+            </div>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-[#059669]">04</span>
+              <div class="text-[11px] font-bold text-[#059669] leading-tight">
+                NOV<br>2026
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white border border-emerald-100 rounded-2xl p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between text-[11px] text-gray-600 mb-4">
+                <span class="flex items-center gap-1">
+                  <span class="text-emerald-700 font-bold">Δ</span> Em breve
+                </span>
+                <span class="border border-gray-300 rounded-full px-2 py-0.5 flex items-center gap-1 text-gray-500 text-[10px]">
+                  <i class="ph ph-buildings"></i> Reitoria
+                </span>
+              </div>
+              <h3 class="font-bold text-gray-800 text-sm leading-snug mb-6 min-h-[40px]">
+                III Encontro Anual da Comissão Própria de Avaliação
+              </h3>
+            </div>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-[#059669]">04</span>
+              <div class="text-[11px] font-bold text-[#059669] leading-tight">
+                NOV<br>2026
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="bg-white border border-emerald-100 rounded-2xl p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between text-[11px] text-gray-600 mb-4">
+                <span class="flex items-center gap-1">
+                  <span class="text-emerald-700 text-[9px]">O</span> Em andamento
+                </span>
+                <span class="border border-gray-300 rounded-full px-2 py-0.5 flex items-center gap-1 text-gray-500 text-[10px]">
+                  <i class="ph ph-buildings"></i> Pau dos Ferros
+                </span>
+              </div>
+              <h3 class="font-bold text-gray-800 text-sm leading-snug mb-6 min-h-[40px]">
+                Oficina "Dando cores ao sol"
+              </h3>
+            </div>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-[#059669]">14</span>
+              <div class="text-[11px] font-bold text-[#059669] leading-tight">
+                SET<br>2026
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="bg-white border border-emerald-100 rounded-2xl p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between text-[11px] text-gray-600 mb-4">
+                <span class="flex items-center gap-1">
+                  <span class="text-emerald-700 text-[9px]">O</span> Em andamento
+                </span>
+                <span class="border border-gray-300 rounded-full px-2 py-0.5 flex items-center gap-1 text-gray-500 text-[10px]">
+                  <i class="ph ph-buildings"></i> São Gonçalo do Amarante
+                </span>
+              </div>
+              <h3 class="font-bold text-gray-800 text-sm leading-snug mb-6 min-h-[40px]">
+                IFJURIS: Introdução ao Direito Constitucional
+              </h3>
+            </div>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-[#059669]">14</span>
+              <div class="text-[11px] font-bold text-[#059669] leading-tight">
+                SET<br>2026
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="bg-white border border-emerald-100 rounded-2xl p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between text-[11px] text-gray-600 mb-4">
+                <span class="flex items-center gap-1">
+                  <span class="text-emerald-700 text-[9px]">O</span> Em andamento
+                </span>
+                <span class="border border-gray-300 rounded-full px-2 py-0.5 flex items-center gap-1 text-gray-500 text-[10px]">
+                  <i class="ph ph-buildings"></i> Reitoria
+                </span>
+              </div>
+              <h3 class="font-bold text-gray-800 text-sm leading-snug mb-6 min-h-[40px]">
+                ASTEEAD Conecta: gestão, monitoramento e apoio à EaD no IFRN
+              </h3>
+            </div>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-[#059669]">14</span>
+              <div class="text-[11px] font-bold text-[#059669] leading-tight">
+                SET<br>2026
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="bg-white border border-emerald-100 rounded-2xl p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between text-[11px] text-gray-600 mb-4">
+                <span class="flex items-center gap-1">
+                  <span class="text-emerald-700 text-[9px]">O</span> Em andamento
+                </span>
+                <span class="border border-gray-300 rounded-full px-2 py-0.5 flex items-center gap-1 text-gray-500 text-[10px]">
+                  <i class="ph ph-buildings"></i> Currais Novos
+                </span>
+              </div>
+              <h3 class="font-bold text-gray-800 text-sm leading-snug mb-6 min-h-[40px]">
+                Produção e exposição de Sala Temática: Abelha e Mel.
+              </h3>
+            </div>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-[#059669]">14</span>
+              <div class="text-[11px] font-bold text-[#059669] leading-tight">
+                SET<br>2026
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
 
 
 
