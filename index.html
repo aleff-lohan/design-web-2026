@@ -4,72 +4,651 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{seu nome aqui} - UX e Dev Front-end</title>
-    <!-- CSS compilado do SCSS | colocar o link correto, pois este vai dar erro, viu-->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Usando a fonte de icones aqui-->
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Footer IFRN</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/phosphor-icons@latest/src/css/phosphor.css">
 </head>
 
 <body>
 
-    <header role="banner">
-        <nav role="navigation" aria-label="Navegação principal">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main role="main">
-        <section id="sobre" aria-labelledby="titulo-card">
-            <div class="card">
+    <header class="bg-green-800 text-white">
 
-                <!-- Avatar (placeholder) -->
-                <div class="card__avatar">
-                    <img src="https://via.placeholder.com/120x120/2c3e50/ffffff?text=Bruno"
-                        alt="Avatar de Bruno Nakamura, UX e Dev Front-end">
-                </div>
+        <div class="mx-auto max-w-7xl px-4">
 
-                <!-- Informações -->
-                <div class="card__content">
-                    <h1 id="titulo-card">Bruno Nakamura</h1>
-                    <p class="card__subtitle">UX e Dev Front-end</p>
+            <div class="flex items-center justify-between gap-4 py-6">
 
-                    <p class="card__description">
-                        Sou um híbrido raro: Design Systems + Engenharia de Produto.
-                        Entrego de ponta a ponta – da descoberta à produção – com métricas
-                        de negócio na cabeceira e DX/UX no detalhe.<br>
-                        Tradução simultânea entre PMs, Design, Front, Back e Data.
-                        Sem teatrinho: shippo, meço, repito.
+                <div class="flex items-center gap-3">
+
+                    <div class="hidden text-4xl md:block">
+                        <i class="ph ph-squares-four"></i>
+                    </div>
+
+                    <div>
+                        <h1 class="text-xl font-bold leading-tight md:text-lg">
+                            <a href="/"
+                                title="Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte"
+                                class="hidden md:flex text-white no-underline">
+                                INSTITUTO FEDERAL
+                            </a>
+                        </h1>
+
+                        <h1 class="text-xl font-bold leading-tight md:hidden">
+                            <a href="/"
+                                title="Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte"
+                                class="text-white no-underline">
+                                IFRN
+                            </a>
+                        </h1>
+
+                        <p class="text-xs text-white">
+                            Rio Grande do Norte
+                        </p>
+                    </div>
+
+                    <p class="ml-8 hidden max-w-xs text-xs font-semibold leading-tight md:block">
+                        Educação, Ciência, Cultura e Tecnologia
+                        <br>
+                        em todo o Rio Grande do Norte
                     </p>
 
-                    <!-- Botão com ícone -->
-                    <a href="#" class="card__button" aria-label="Vamos trabalhar juntos">
-                        Vamos trabalhar juntos <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                    </a>
                 </div>
 
-                <!-- Tecnologias (mockup de ícones) -->
-                <div class="card__tech" id="tecnologias">
-                    <h2 class="card__tech-title">Tecnologias que domino</h2>
-                    <ul class="card__tech-list">
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> ClickUp</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Dropbox</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> PAYCHEX</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> elastic</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> stripe</li>
-                    </ul>
+                <div class="flex items-center gap-2">
+
+                    <div class="hidden items-center gap-2 md:flex">
+
+                        <a href="#" aria-label="Instagram"
+                            class="flex h-11 w-11 items-center justify-center rounded-full border border-white text-xl transition hover:bg-white hover:text-green-800">
+                            <img src="assets/img/instagram-logo.svg" alt="">
+                            <i class="ph ph-instagram-logo"></i>
+                        </a>
+
+                        <a href="#" aria-label="Twitter"
+                            class="flex h-11 w-11 items-center justify-center rounded-full border border-white text-xl transition hover:bg-white hover:text-green-800">
+                            <img src="assets/img/x-logo.svg" alt="">
+                            <i class="ph ph-twitter-logo"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn"
+                            class="flex h-11 w-11 items-center justify-center rounded-full border border-white text-xl transition hover:bg-white hover:text-green-800">
+                            <img src="assets/img/linkedin-logo.svg" alt="">
+                            <i class="ph ph-linkedin-logo"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube"
+                            class="flex h-11 w-11 items-center justify-center rounded-full border border-white text-xl transition hover:bg-white hover:text-green-800">
+                            <img src="assets/img/youtube-logo.svg" alt="">
+                            <i class="ph ph-youtube-logo"></i>
+                        </a>
+
+                        <a href="#" aria-label="Spotify"
+                            class="flex h-11 w-11 items-center justify-center rounded-full border border-white text-xl transition hover:bg-white hover:text-green-800">
+                            <img src="assets/img/spotify-logo.svg" alt="">
+                            <i class="ph ph-spotify-logo"></i>
+                        </a>
+
+                        <a href="#" aria-label="TikTok"
+                            class="flex h-11 w-11 items-center justify-center rounded-full border border-white text-xl transition hover:bg-white hover:text-green-800">
+                            <img src="assets/img/tiktok-logo.svg" alt="">
+                            <i class="ph ph-tiktok-logo"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="mx-2 hidden h-8 border-l border-white/50 md:block"></div>
+
+                    <button id="altocontraste" type="button" aria-label="Alto contraste"
+                        class="hidden h-11 w-11 items-center justify-center rounded-full border border-white text-xl md:flex">
+                        <img src="assets/img/moon.svg" alt="">
+                        <i class="ph ph-contrast"></i>
+                    </button>
+
+                    <button type="button" aria-label="Modo escuro"
+                        class="hidden h-11 w-11 items-center justify-center rounded-full border border-white text-xl md:flex">
+                        <img src="assets/img/yin-yang.svg" alt="">
+                        <i class="ph ph-moon"></i>
+                    </button>
+
+                    <form method="get" action="/search/"
+                        class="hidden h-11 items-center rounded-full bg-white px-4 md:flex">
+                        <input type="search" name="query" placeholder="Busca" aria-label="Busca"
+                            class="w-36 bg-transparent text-sm text-gray-700 placeholder-gray-500 focus:outline-none" />
+
+                        <button type="submit" aria-label="Pesquisar" class="text-lg text-gray-500">
+                            <i class="ph ph-magnifying-glass"></i>
+                        </button>
+                    </form>
+
+                    <button id="menuToggle" type="button" aria-label="Menu" class="hidden md:justify-between rounded p-2 text-3xl">
+                        <i class="ph ph-list"></i>
+                    </button>
+
                 </div>
+
             </div>
-        </section>
-    </main>
 
-    <footer role="contentinfo">
-        <p>&copy; 2026 Bruno Nakamura - Exemplo didático para alunos de webdesign</p>
-    </footer>
+            <div class="border-t border-white/60"></div>
+
+            <nav aria-label="Navegação principal" class="hidden items-center gap-7 py-4 md:flex">
+                <a href="#" class="text-sm font-bold no-underline transition hover:text-green-200">
+                    Processos seletivos
+                </a>
+
+                <a href="#" class="text-sm font-bold no-underline transition hover:text-green-200">
+                    Cursos
+                </a>
+
+                <a href="#" class="text-sm font-bold no-underline transition hover:text-green-200">
+                    Campi
+                </a>
+
+                <a href="#" class="text-sm font-bold no-underline transition hover:text-green-200">
+                    Institucional
+                </a>
+
+                <a href="#" class="text-sm font-bold no-underline transition hover:text-green-200">
+                    Acesso à Informação
+                </a>
+
+                <a href="#" class="text-sm font-bold no-underline transition hover:text-green-200">
+                    Eventos
+                </a>
+
+                <a href="#" class="text-sm font-bold no-underline transition hover:text-green-200">
+                    Serviços
+                </a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    
+    <section class="max-w-7xl mx-auto px-4 py-10">
+
+        <h1 class="text-3xl font-bold text-green-800 mb-8">
+          Notícias
+        </h1>
+    
+        <div class="http://127.0.0.1:3000/index.html?vscode-livepreview=true">
+    
+          <article
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+    
+            <img src="https://i.pinimg.com/1200x/15/ca/57/15ca57e69eb155e3dfafa957b3c04095.jpg" alt="Troféu de premiação"
+              class="w-full h-48 object-cover" />
+    
+            <div class="p-5 flex flex-col flex-1 space-y-2">
+    
+              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                Prêmio IEL 2026
+              </span>
+    
+              <h2 class="text-xl font-bold text-green-800 mt-2.">
+                IFRN tem projetos entre os vencedores do Prêmio IEL 2026
+              </h2>
+    
+              <p class=" text-gray-700 text-sm">
+                Instituto conquistou o 1º lugar em Educação Inovadora - Nível Técnico
+                e o 2º lugar em Educação Inovadora - Nível Superior.
+              </p>
+    
+              <p class="text-gray-500 text-xs mt-2">
+                Há 20 horas, 40 minutos
+              </p>
+    
+            </div>
+          </article>
+    
+    
+          <article
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+    
+            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80"
+              alt="Pesquisa científica" class="w-full h-48 object-cover" />
+    
+            <div class="p-5 flex flex-col flex-1 space-y-2">
+    
+              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                Pesquisa
+              </span>
+    
+              <h2 class="text-xl font-bold text-green-800 mt-2.">
+                IFRN desenvolve novas pesquisas para inovação tecnológica
+              </h2>
+    
+              <p class="text-gray-700 text-sm">
+                Projetos desenvolvidos por estudantes e pesquisadores do instituto
+                buscam novas soluções para desafios da sociedade.
+              </p>
+    
+              <p class="text-gray-500 text-xs mt-2">
+                Há 1 dia
+              </p>
+    
+            </div>
+          </article>
+    
+    
+          <article
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+    
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+              alt="Estudantes em intercâmbio" class="w-full h-48 object-cover" />
+    
+            <div class="p-5 flex flex-col flex-1 space-y-2">
+    
+              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                Internacionalização
+              </span>
+    
+              <h2 class="text-xl font-bold text-green-800 mt-2.">
+                Estudantes do IFRN participam de programa de intercâmbio
+              </h2>
+    
+              <p class="text-gray-700 text-sm">
+                Programa oferece aos alunos a oportunidade de vivenciar novas
+                culturas e ampliar sua experiência acadêmica internacional.
+              </p>
+    
+              <p class="text-gray-500 text-xs mt-2">
+                Há 2 dias
+              </p>
+    
+            </div>
+          </article>
+    
+          <article
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+    
+            <img src="https://i.pinimg.com/736x/34/a0/87/34a0877c1d52908a53a9c11ff31515d4.jpg"
+              alt="Estudantes em atividade acadêmica" class="w-full h-48 object-cover" />
+    
+            <div class="p-5 flex flex-col flex-1 space-y-2">
+    
+              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                Educação
+              </span>
+    
+              <h2 class="text-xl font-bold text-green-800 mt-2">
+                IFRN amplia oportunidades de formação para estudantes
+              </h2>
+    
+              <p class="text-gray-700 text-sm">
+                Novas iniciativas fortalecem a formação acadêmica e profissional
+                dos estudantes em diferentes áreas do conhecimento.
+              </p>
+    
+              <p class="text-gray-500 text-xs mt-2">
+                Há 3 dias
+              </p>
+    
+            </div>
+          </article>
+    
+        </div>
+    
+      </section>
+
+
+      <section class="max-w-7xl mx-auto px-4 py-10">
+
+        <h1 class="text-3xl font-bold text-green-800 mb-8">
+          Eventos
+        </h1>
+    
+        <div class="http://127.0.0.1:3000/index.html?vscode-livepreview=true">
+    
+          <article
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+    
+            <img src="https://www.feiradesantana.ba.gov.br/imagens/noticias/16022025225254.jpg" alt="Troféu de premiação"
+              class="w-full h-48 object-cover" />
+    
+            <div class="p-5 flex flex-col flex-1 space-y-2">
+    
+              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                Lúdico
+              </span>
+    
+              <h2 class="text-xl font-bold text-green-800 mt-2.">
+                Estudantes do IFRN participam da Secite
+              </h2>
+    
+              <p class=" text-gray-700 text-sm">
+                IFRN promove programação especial com atividades voltadas à integração, ao conhecimento e à participação da comunidade acadêmica.
+              </p>
+    
+              <p class="text-gray-500 text-xs mt-2">
+                Há 20 horas, 40 minutos
+              </p>
+    
+            </div>
+          </article>
+    
+    
+          <article
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+    
+            <img src="https://diocesedesaojoaodelrei.com.br/wp-content/uploads/2025/02/foto-de-foco-seletivo-de-uma-pessoa-segurando-um-livro_181624-30215-1024x681.jpg"
+              alt="Pesquisa científica" class="w-full h-48 object-cover" />
+    
+            <div class="p-5 flex flex-col flex-1 space-y-2">
+    
+              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                Integração
+              </span>
+    
+              <h2 class="text-xl font-bold text-green-800 mt-2.">
+                Conheça a SEMENTE - Semana do Meio Ambiente
+              </h2>
+    
+              <p class="text-gray-700 text-sm">
+                Programação especial reúne estudantes e servidores do IFRN em uma série de atividades dedicadas ao aprendizado e à troca de experiências.
+              </p>
+    
+              <p class="text-gray-500 text-xs mt-2">
+                Há 1 dia
+              </p>
+    
+            </div>
+          </article>
+    
+    
+
+
+
+<footer class="text-[8px] text-gray-600">
+
+    <!-- VOLTAR AO TOPO -->
+    <div class="max-w-[620px] mx-auto border-t border-gray-200 pt-1 text-center">
+        <button class="text-[7px] text-green-700">
+            ↑ Voltar ao topo
+        </button>
+    </div>
+
+
+    <!-- MAPA DO SITE -->
+    <div class="max-w-[620px] mx-auto py-10">
+
+        <div class="grid grid-cols-4 gap-8">
+
+            <!-- PROCESSOS -->
+            <div>
+                <h2 class="font-semibold text-gray-800 mb-2">
+                    Processos seletivos
+                </h2>
+
+                <ul class="space-y-[4px]">
+                    <li>Bolsas para estudantes</li>
+                    <li>Empreenda no IFRN</li>
+                    <li>Estude no IFRN</li>
+                    <li>Gestão IFRN</li>
+                    <li>Internacionalização</li>
+                    <li>Monitoria e Tutoria</li>
+                    <li>Pesquise no IFRN</li>
+                    <li>Servidores</li>
+                    <li>Trabalhe no IFRN</li>
+                </ul>
+
+                <h2 class="font-semibold text-gray-800 mt-5 mb-2">
+                    Cursos
+                </h2>
+
+                <ul class="space-y-[4px]">
+                    <li>Cursos de Pós-Graduação</li>
+                    <li>Cursos Superiores</li>
+                    <li>Cursos Técnicos</li>
+                    <li>Outros Cursos</li>
+                </ul>
+            </div>
+
+
+            <!-- CAMPI -->
+            <div>
+                <h2 class="font-semibold text-gray-800 mb-2">
+                    Campi
+                </h2>
+
+                <ul class="space-y-[4px]">
+                    <li>Apodi</li>
+                    <li>Caicó</li>
+                    <li>Canguaretama</li>
+                    <li>Ceará-Mirim</li>
+                    <li>Currais Novos</li>
+                    <li>Ipanguaçu</li>
+                    <li>João Câmara</li>
+                    <li>Jucurutu</li>
+                    <li>Lajes</li>
+                    <li>Macau</li>
+                    <li>Mossoró</li>
+                    <li>Natal-Central</li>
+                    <li>Natal-Centro Histórico</li>
+                    <li>Natal-Zona Leste</li>
+                    <li>Natal-Zona Norte</li>
+                    <li>Nova Cruz</li>
+                    <li>Parelhas</li>
+                    <li>Parnamirim</li>
+                    <li>Pau dos Ferros</li>
+                    <li>Santa Cruz</li>
+                    <li>São Gonçalo do Amarante</li>
+                    <li>São Miguel</li>
+                    <li>São Paulo do Potengi</li>
+                    <li>Touros</li>
+                    <li>Umarizal</li>
+                    <li>Reitoria</li>
+                </ul>
+            </div>
+
+
+            <!-- INSTITUCIONAL -->
+            <div>
+                <h2 class="font-semibold text-gray-800 mb-2">
+                    Institucional
+                </h2>
+
+                <ul class="space-y-[4px]">
+                    <li>Apresentação</li>
+                    <li>Administração</li>
+                    <li>Comissões permanentes</li>
+                    <li>Comunicação Institucional</li>
+                    <li>Ensino</li>
+                    <li>Estudantes</li>
+                    <li>Extensão</li>
+                    <li>Gabinete</li>
+                    <li>Gestão Estratégica</li>
+                    <li>Governança</li>
+                    <li>Pesquisa, Pós-graduação e Inovação</li>
+                    <li>Servidores</li>
+                    <li>Tecnologia da Informação</li>
+                    <li>Internacionalização</li>
+                    <li>Infraestrutura</li>
+                    <li>Polo de Inovação Currais Novos</li>
+                </ul>
+            </div>
+
+
+            <!-- ACESSO -->
+            <div>
+                <h2 class="font-semibold text-gray-800 mb-2">
+                    Acesso à Informação
+                </h2>
+
+                <ul class="space-y-[4px]">
+                    <li>Institucional</li>
+                    <li>Ações e Programas</li>
+                    <li>Participação social</li>
+                    <li>Auditorias</li>
+                    <li>Convênios e Transferências</li>
+                    <li>Receitas e Despesas</li>
+                    <li>Licitações e Contratos</li>
+                    <li>Servidores</li>
+                    <li>Informações classificadas</li>
+                    <li>Serviço de Informação ao Cidadão</li>
+                    <li>Perguntas Frequentes</li>
+                    <li>Dados Abertos</li>
+                    <li>Sanções administrativas</li>
+                    <li>Ferramentas e aspectos tecnológicos</li>
+                    <li>Boletins de Serviços</li>
+                    <li>Proteção de dados pessoais</li>
+                    <li>Documentos Institucionais</li>
+                    <li>Transparência e Prestação de Contas</li>
+                </ul>
+
+                <h2 class="font-semibold text-gray-800 mt-7">Eventos</h2>
+                <h2 class="font-semibold text-gray-800 mt-7">Serviços</h2>
+                <h2 class="font-semibold text-gray-800 mt-7">Acessibilidade</h2>
+                <h2 class="font-semibold text-gray-800 mt-7">Créditos</h2>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- BANNERS -->
+    <div class="border-t border-gray-200">
+
+        <div class="max-w-[620px] mx-auto py-8">
+
+            <div class="flex justify-center items-center gap-8">
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/icon_memoria_ifrn.original.png"
+                         class="w-7">
+                    <span>Memoria</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/Banner_-_Sistema_de_Bibliotecas.original.png"
+                         class="w-7">
+                    <span>Sistema de Bibliotecas do IFRN</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/licitaC3A7C3B5es.original.png"
+                         class="w-6">
+                    <span>Licitações</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/ouvidoria.original.png"
+                         class="w-7">
+                    <span>Ouvidoria</span>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center items-center gap-8 mt-6">
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/processos_eletronicos.original.png"
+                         class="w-8">
+                    <span>Processos eletrônicos</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/sic.original.png"
+                         class="w-7">
+                    <span>Serviço de Informação ao Cidadão</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/transparencia_e_prestaC3A7C3A3o.original.png"
+                         class="w-7">
+                    <span>Transparência e prestação de contas</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                    <img src="/assets/img/FalaBR.original.png"
+                         class="w-7">
+                    <span>Fala.BR</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- INFORMAÇÕES -->
+    <div class="border-t border-gray-200">
+
+        <div class="max-w-[620px] mx-auto py-7">
+
+            <div class="flex justify-between items-center">
+
+                <div class="flex gap-4 items-center">
+
+                    <img src="/assets/img/ifrnlogo.png"
+                         class="w-14">
+
+                    <div>
+
+                        <h2 class="font-semibold text-gray-800">
+                            Instituto Federal de Educação, Ciência e Tecnologia
+                            do Estado do Rio Grande do Norte
+                        </h2>
+
+                        <p>Rua Dr. Nilo Bezerra Ramalho, 1692, Tirol</p>
+                        <p>CEP: 59015-300</p>
+                        <p>E-mail: comunicacao@ifrn.edu.br</p>
+                        <p>Telefone: (84) 4005-0890</p>
+
+                        <div class="flex gap-3 mt-3 text-sm">
+                            <i class="ph ph-instagram-logo"></i>
+                            <i class="ph ph-twitter-logo"></i>
+                            <i class="ph ph-linkedin-logo"></i>
+                            <i class="ph ph-youtube-logo"></i>
+                            <i class="ph ph-spotify-logo"></i>
+                            <i class="ph ph-tiktok-logo"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- E-MEC -->
+                <div class="border border-gray-400 rounded p-2 flex gap-2">
+
+                    <div>
+                        <p class="text-green-700 font-semibold">
+                            e-MEC
+                        </p>
+
+                        <p class="text-[7px] w-24">
+                            Consulte o cadastro da instituição
+                            no Sistema do e-MEC
+                        </p>
+                    </div>
+
+                    <img src="/assets/img/qrcode.jpg"
+                         class="w-16 h-16">
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- COPYRIGHT -->
+    <div class="bg-[#062719] text-white py-3">
+
+        <p class="text-center text-[7px]">
+            Copyright © 2026 | Instituto Federal de Educação,
+            Ciência e Tecnologia do Estado do Rio Grande do Norte
+        </p>
+
+    </div>
+
+</footer>
+
 </body>
-
 </html>
