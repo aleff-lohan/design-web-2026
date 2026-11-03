@@ -166,7 +166,13 @@
                 //       oficina.favorita = !oficina.favorita
                 // ==========================================
                 alternarFavorito(id) {
-                    // ... seu código aqui
+                    const oficina = this.oficinas.find(item => item.id === id);
+
+                    if (!oficina) {
+                        return;
+                    }
+
+                    oficina.favorita = !oficina.favorita;
                 },
 
                 // ==========================================
