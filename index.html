@@ -105,6 +105,10 @@
                 // Substitua este retorno ao fazer a tarefa.
                 // ==========================================
                 oficinasVisiveis() {
+                    if (this.filtro === 'favoritas') {
+                        return this.oficinas.filter(oficina => oficina.favorita);
+                    }
+                    
                     return this.oficinas;
                 }
             },
