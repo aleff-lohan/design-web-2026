@@ -2,74 +2,110 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{seu nome aqui} - UX e Dev Front-end</title>
-    <!-- CSS compilado do SCSS | colocar o link correto, pois este vai dar erro, viu-->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Usando a fonte de icones aqui-->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+     
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Formulário de Inscrição Vue</title>
+     
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+     
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 
-<body>
+<body class="min-h-screen bg-base-200 flex items-center justify-center p-6">
+     
+    <div id="app" class="card bg-base-100 shadow-xl w-full max-w-md">
+            <div class="card-body">
+                  <!-- título da página -->
+                  <h1 class="card-title justify-center text-2xl mb-2">
+                        Inscrição em Oficina
+                    </h1>
+                  <!-- Formulário de inscrição -->
+                  <form class="space-y-4" v-if="!confirmado" @submit.prevent="confirmarInscricao">
 
-    <header role="banner">
-        <nav role="navigation" aria-label="Navegação principal">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+                        <!-- v-model: ligar input ao estado -->
+                        <div>
+                              <label for="nome" class="block font-semibold mb-1">Nome</label>
+                              <input id="nome" type="text" class="input w-full" v-model="nome" @blur="validarCampos"
+            :class="{'input-error': erroNome}">
+                              <p id="erro-nome" v-if="erroNome" class="text-error text-sm mt-1">Informe seu nome</p>
+                          </div>
+                       
+                        <div>
+                              <label for="email" class="block font-semibold mb-1">E-mail</label>
+                              <input type="text" id="email" class="input w-full" v-model="email" @blur="validarCampos"
+            :class="{'input-error': erroEmail}">
+                              <p id="erro-email" v-if="erroEmail" class="text-error text-sm mt-1">Informe um e-mail
+            válido</p>
+                          </div>
 
-    <main role="main">
-        <section id="sobre" aria-labelledby="titulo-card">
-            <div class="card">
+                        <button type="submit" class="btn btn-primary w-full">Confirmar inscrição</button>
+                    </form>
 
-                <!-- Avatar (placeholder) -->
-                <div class="card__avatar">
-                    <img src="https://via.placeholder.com/120x120/2c3e50/ffffff?text=Bruno"
-                        alt="Avatar de Bruno Nakamura, UX e Dev Front-end">
-                </div>
+                  <!-- área de resultado -->    
+                    <div v-else class="space-y-4">
+                          <div class="alert alert-success">Inscrição confirmada!</div>
+                          <div class="bg-base-200 rounded-box p-4 space-y-2">
+                                <p><strong>Nome:</strong> {{ nome }}</p>
+                                <p class="break-words"><strong>E-mail:</strong> {{ email }}</p>
+                            </div>
+                          <button type="button" class="btn btn-outline w-full" @click="editarInscricao">Editar</button>
+                      </div>
+            </div>
+      </div>
 
-                <!-- Informações -->
-                <div class="card__content">
-                    <h1 id="titulo-card">Bruno Nakamura</h1>
-                    <p class="card__subtitle">UX e Dev Front-end</p>
+     
+  <script>
+    Vue.createApp({
+      data() {
+        return {
+          nome: '',
+          email: '',
+          erroNome: false,
+          erroEmail: false,
+          confirmado: false
+        }
+      },
 
-                    <p class="card__description">
-                        Sou um híbrido raro: Design Systems + Engenharia de Produto.
-                        Entrego de ponta a ponta – da descoberta à produção – com métricas
-                        de negócio na cabeceira e DX/UX no detalhe.<br>
-                        Tradução simultânea entre PMs, Design, Front, Back e Data.
-                        Sem teatrinho: shippo, meço, repito.
-                    </p>
+      methods: {
+        // Limpa todas as mensagens de erro
+        limparErros() {
+          this.erroNome = false;
+          this.erroEmail = false;
+        },
 
-                    <!-- Botão com ícone -->
-                    <a href="#" class="card__button" aria-label="Vamos trabalhar juntos">
-                        Vamos trabalhar juntos <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                    </a>
-                </div>
+        // Valida os campos do formulário
+        validarCampos() {
 
-                <!-- Tecnologias (mockup de ícones) -->
-                <div class="card__tech" id="tecnologias">
-                    <h2 class="card__tech-title">Tecnologias que domino</h2>
-                    <ul class="card__tech-list">
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> ClickUp</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Dropbox</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> PAYCHEX</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> elastic</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> stripe</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
+          // Validação do nome
+          this.erroNome = this.nome.trim() === '';
 
-    <footer role="contentinfo">
-        <p>&copy; 2026 Bruno Nakamura - Exemplo didático para alunos de webdesign</p>
-    </footer>
+          // Validação do email
+          const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          this.erroEmail = !emailValido.test(this.email.trim());
+
+          // Retorna true somente se não houver erros
+          return !this.erroNome && !this.erroEmail;
+        },
+
+        // Confirma a inscrição caso os campos sejam válidos
+        confirmarInscricao() {
+          if (this.validarCampos()) {
+            this.confirmado = true;
+          }
+        },
+
+        // Volta para o formulário mantendo os dados digitados
+        editarInscricao() {
+          this.limparErros();
+          this.confirmado = false;
+        }
+      }
+    }).mount("#app");
+  </script>
 </body>
 
 </html>
